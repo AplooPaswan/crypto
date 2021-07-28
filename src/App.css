@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+body{
+background-color: black ;
+flex-direction: row;
+
+}
+.load{
+    padding: 5rem;
+    font-size: xx-large;
+    color: whitesmoke;
+    justify-content: center !important;
+    min-width: 100vw !important;
+    font-weight: 800;
+    min-height: 80vh;
+    background-image: url("Loading.svg");
+    background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.main :nth-child(1){
+/* padding-top: -20px; */
+}
+.symbol img {
+    padding-left: 5px;
+    padding-top: 3rem;
+    width: 100%;
+    height: auto;
   }
+
+.row{
+    justify-content: space-evenly !important;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main{
+    text-transform: capitalize;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    
+    width: 27rem;
+    
+    background-color: rgb(6,17,33);
+    border-radius: 3px;
+    color: whitesmoke;
 }
 
-.App-link {
-  color: #61dafb;
+
+.rank{
+    font-size: small;
+    opacity: 0.3;
+    float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ath{
+color: forestgreen;
+
+}
+
+.atl{
+color: rgba(255, 0, 0, 0.452);
+
+}
+.ath, .atl{
+    font-size: small;
+}
+
+
+
+
+
+
+.symbol{
+    
+    line-height:inherit;
+    width: 170px !important;
+}
+@media (max-width:640px){
+    .symbol{
+        padding-left: 35px !important;
+    }
+}
+
+.data{
+    width: inherit; 
+    /* background-color: rgb(155, 158, 155); */
+    padding:0 0 0 0.9rem !important;
+    line-height: inherit;
+    font-weight: 400;
+}
+
+.data h1{
+    font-weight: 700;
+} 
+
+h5{
+    color: green;
+}
+
+
+.low{
+color: red;
+
+}
+
+.high{
+color: orange;
+}
+.now{
+    color: rgba(25, 206, 25, 0.897);
+    font-size: xx-large;
+}
+
+.header{
+    font-weight: bold;
 }
